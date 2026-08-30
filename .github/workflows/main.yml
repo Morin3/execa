@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - uses: lycheeverse/lychee-action@v1
+      - uses: lycheeverse/lychee-action@v2.0.2
         with:
           args: --cache --verbose --no-progress --include-fragments --exclude linkedin --exclude file:///test --exclude invalid.com '*.md' 'docs/*.md' '.github/**/*.md' '*.json' '*.js' 'lib/**/*.js' 'test/**/*.js' '*.ts' 'test-d/**/*.ts'
           fail: true
